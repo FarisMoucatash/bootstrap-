@@ -3,164 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Football Tech Hub | Stats & Stories</title>
+    <title>Faris Moucatash | Portfolio</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     
     <style>
-        :root {
-            --pitch-green: #2ecc71;
-            --stadium-dark: #121212;
-            --turf-gray: #1e1e1e;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--stadium-dark);
-            color: #ffffff;
-            scroll-behavior: smooth;
-        }
-
-        h1, h2, h3, .navbar-brand {
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
-        }
-
-        /* Hero Section with Overlay */
-        .football-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
-                        url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1920');
-            background-size: cover;
-            background-position: center;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            border-bottom: 5px solid var(--pitch-green);
-        }
-
-        /* Section Styling */
-        .section-padding { padding: 80px 0; }
+        body { font-family: 'Open Sans', sans-serif; background-color: #f8f9fa; color: #333; }
+        h1, h2, h3, .navbar-brand { font-family: 'Montserrat', sans-serif; font-weight: 700; }
         
-        .card-project {
-            background: var(--turf-gray);
-            border: 1px solid #333;
-            transition: 0.4s;
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
             color: white;
-        }
-        .card-project:hover {
-            border-color: var(--pitch-green);
-            transform: scale(1.02);
+            padding: 120px 0;
+            text-align: center;
         }
 
-        .timeline-box {
-            border-left: 3px solid var(--pitch-green);
-            padding: 20px;
-            margin-left: 20px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 0 10px 10px 0;
-        }
+        .section-padding { padding: 80px 0; }
+        .bg-white-custom { background-color: #ffffff; }
 
-        .fav-icon { font-size: 3rem; color: var(--pitch-green); }
-        .btn-football { background-color: var(--pitch-green); color: black; font-weight: bold; }
-        .btn-football:hover { background-color: #27ae60; color: white; }
+        .timeline { border-left: 3px solid #007bff; padding-left: 20px; position: relative; }
+        .timeline-item { margin-bottom: 30px; }
+
+        .card { transition: 0.3s; border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        
+        .nav-link { font-weight: 600; text-transform: uppercase; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">FOOTBALL<span class="text-success">LAB</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footballNav">
+            <a class="navbar-brand" href="#">FARIS MOUCATASH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="footballNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#coding">Sports Tech</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#academics">Academic Story</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#favourites">Top Picks</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Coding</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#academics">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#favourites">Favourites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="football-hero text-center">
+    <header id="about" class="hero">
         <div class="container">
-            <h1 class="display-2 fw-bold">Tactics, Code, and <span class="text-success">The Beautiful Game</span></h1>
-            <p class="lead text-light mb-4">Tracking my journey from the university halls to the digital pitch.</p>
-            <a href="#coding" class="btn btn-football btn-lg px-5">View Projects</a>
+            <h1 class="display-3 mb-3">Faris Moucatash</h1>
+            <p class="lead mb-4">Jordanian Developer & Student based in Hungary</p>
+            <div class="mx-auto" style="max-width: 700px;">
+                <p>Welcome to my personal portfolio. I am a passionate coder bridging the gap between Middle Eastern roots and European academic experiences. I specialize in building responsive web solutions and exploring the future of technology.</p>
+            </div>
         </div>
     </header>
 
-    <section id="coding" class="section-padding container">
-        <h2 class="text-center mb-5">Coding Activity & <span class="text-success">Sports Projects</span></h2>
+    <section id="projects" class="section-padding container">
+        <h2 class="text-center mb-5">Coding Activity</h2>
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="card card-project h-100 p-4">
-                    <h3>🏆 MatchTracker</h3>
-                    <p class="text-secondary">A Python script designed to scrape live football scores and export them to a personal CSV database for analysis.</p>
+                <div class="card h-100 p-4">
+                    <h5 class="text-primary">Bootstrap Mastery</h5>
+                    <p>Designed and deployed a fully responsive multi-section portfolio using Bootstrap 5, focusing on clean UI and accessibility.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card card-project h-100 p-4">
-                    <h3>📊 Squad Manager</h3>
-                    <p class="text-secondary">Built a responsive Bootstrap dashboard to manage local team lineups, tracking goals and yellow cards.</p>
+                <div class="card h-100 p-4">
+                    <h5 class="text-primary">Data Analysis Tool</h5>
+                    <p>Worked on a Python-based project to analyze regional tech trends between the MENA region and Central Europe.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card card-project h-100 p-4">
-                    <h3>⚽ Physics Engine</h3>
-                    <p class="text-secondary">A small JavaScript simulation demonstrating ball trajectory and velocity based on different "kick" strengths.</p>
+                <div class="card h-100 p-4">
+                    <h5 class="text-primary">Automation Scripts</h5>
+                    <p>Developed several shell and Python scripts to streamline daily academic workflows and file management.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="academics" class="section-padding bg-light text-dark">
+    <section id="academics" class="section-padding bg-white-custom">
         <div class="container">
-            <h2 class="text-center mb-5">Academic History</h2>
+            <h2 class="text-center mb-5">Academic Journey</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="timeline-box mb-4 shadow-sm">
-                        <h4 class="fw-bold">University Experience (2022-2026)</h4>
-                        <p>Studying Computer Science with a minor in Data Analytics. Member of the University Football Team where I learned the value of team discipline and agile strategy—traits I apply to my coding projects.</p>
-                    </div>
-                    <div class="timeline-item timeline-box shadow-sm">
-                        <h4 class="fw-bold">Tech Certifications</h4>
-                        <p>Completed "Data Science in Sports" online course. Mastered the ability to visualize player performance through R and Python during my sophomore year.</p>
+                <div class="col-md-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>University Studies in Hungary</h4>
+                            <p class="text-muted">Current Academic Focus</p>
+                            <p>Moving to Hungary has provided me with a unique perspective on global technology. I am currently focusing on Software Engineering and participating in international student tech communities.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Foundation in Jordan</h4>
+                            <p class="text-muted">Early Education</p>
+                            <p>My academic roots in Jordan provided a strong foundation in mathematics and logical thinking, which eventually led me to the world of programming.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="favourites" class="section-padding container text-center">
-        <h2 class="mb-5">Personal <span class="text-success">Favorites</span></h2>
-        <div class="row g-4">
+    <section id="favourites" class="section-padding container">
+        <h2 class="text-center mb-5">Beyond the Code</h2>
+        <div class="row text-center">
             <div class="col-md-4">
-                <div class="fav-icon">🏟️</div>
-                <h4>Activities</h4>
-                <p>Analyzing Sunday League tactics and attending local stadium matches for that atmosphere.</p>
+                <div class="p-3">
+                    <h3>🍱 Food</h3>
+                    <p>A mix of Jordanian Mansaf and Hungarian Goulash. I love exploring the fusion of different culinary cultures.</p>
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="fav-icon">🍔</div>
-                <h4>Matchday Food</h4>
-                <p>Classic stadium burgers or spicy chicken wings during a high-stakes Champions League final.</p>
+                <div class="p-3">
+                    <h3>⚽ Sports</h3>
+                    <p>Football is a huge part of my life, whether playing in local Hungarian leagues or watching international tournaments.</p>
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="fav-icon">🎮</div>
-                <h4>Other Sports</h4>
-                <p>When not watching football, I enjoy playing F1 racing games and competitive Chess.</p>
+                <div class="p-3">
+                    <h3>✈️ Activity</h3>
+                    <p>Traveling across Europe to learn about history and architecture, which inspires my design work.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer id="stats" class="bg-black text-center py-5 border-top border-dark">
-        <div class="container">
-            <p class="text-secondary">© 2026 Football Hub Project. All Rights Reserved.</p>
-            <p class="small">Designed with Bootstrap for Responsive Performance.</p>
+    <section id="contact" class="section-padding bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Get In Touch</h2>
+            <p>I am always open to discussing new projects or tech opportunities.</p>
+            <div class="mt-4">
+                <p><strong>Email:</strong> faris.moucatash@example.com</p>
+                <div class="mt-3">
+                    <a href="https://github.com/FarisMoucatash" class="btn btn-outline-light me-2">GitHub Profile</a>
+                    <a href="#" class="btn btn-primary">Download CV</a>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <footer class="py-3 text-center border-top">
+        <p class="small text-muted mb-0">&copy; 2026 Faris Moucatash. All Rights Reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
